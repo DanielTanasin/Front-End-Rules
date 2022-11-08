@@ -14,9 +14,20 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header__wrapper">
-          <div class="header__logo-box">
+    <div class="search-modal">
+      <button class="close-search"> &#10005; </button>
+      <div class="search-wrap">
+        <form action="#" class="search-form"> 
+          <input type="text" class="search-input"  placeholder="Search" required>
+          <button class="search-box search-box--two">
+            <img src="/assets/images/search.png" class="search search--two" alt="">
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__logo-box">
             <img src="/assets/images/Logo.png"  alt="image of logo" class="header__logo">
           </div>
           <ul class="header__nav">
@@ -33,9 +44,14 @@
               <a href="#" class="nav-link">Contact us</a>
             </li>
           </ul>
-          <div class="search-box">
-            <img src="/assets/images/search.png".png" class="search" alt="img of search">
-          </div>
+          <button class="search-box">
+            <img src="/assets/images/search.png" class="search" alt="img of search">
+          </button>
+          <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
         </div>
       </div>
     </header>

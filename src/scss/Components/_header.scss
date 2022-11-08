@@ -1,4 +1,4 @@
-.header{
+.header {
     width: 100%;
     background-color: $color-white;
 }
@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    
 }
 
 .header__nav {
@@ -29,14 +29,16 @@
     color: $color-black;
     font-weight: 600;
     font-size: 20px;
-    margin: 0 15px;
+    padding:70px 15px ;
+    height: 100%;
+    transition: all $trans-links ;
+
+    &:hover{
+        background-color:$padding-link;
+    }
 }
 
-// .nav-item:not(:last-child){
-// margin-right: 30px;
-// }
-
-.nav-link{
+.nav-link {
     text-decoration: none;
     color: $color-black;
     font-weight: 600;
@@ -44,12 +46,152 @@
     font-family: 'Epilogue', sans-serif;
 }
 
-.search-box{
-max-width: 100%;
-margin-right: 20px;
+.search-box {
+    background-color: transparent;
+    border: none;
+    margin-right: 20px;
+    transition: all $trans-btns;
+    
+    &:hover {
+        @include hoverbuttons;
+    }
 }
 
-.search{
+.search  {
     width: 100%;
 }
 
+.hamburger {
+   display: none;
+
+    @include tablet {
+        display: block;
+        position: relative;
+        cursor:pointer;
+        z-index: 1;
+        background-color: transparent;
+        border: none;
+
+    }
+}
+
+.bar {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background:$color-black;
+    margin: 6px 0;
+}
+
+.search-modal {
+    z-index: 10;
+    position: fixed;
+    background-color: $color-white;
+    height: 100%;
+    width: 100%;
+}
+
+.search-wrap{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-form {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.search-input { 
+    width: 75%;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 16px 0;
+    justify-content: center;
+    border-bottom: 2px solid $padding-link;
+    outline: none;
+
+    @include tablet{
+        width: 90%;
+    }
+  
+}
+
+
+
+.search-input::placeholder {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    padding-left:30px;
+    color:$dark-grey;
+    display: flex;
+    align-self: center;    
+   
+    @include tablet{
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 29px;
+    }
+
+    @include mobile{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+}
+
+.close-search{
+    position: absolute;
+    color: $dark-grey;
+    background-color: transparent;
+    border: none;
+    top: 2%;
+    right: 2%;
+    font-family: 'Material Icons';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    transition: all $trans-btns;
+
+    &:hover{
+        @include hoverbuttons;
+    }
+
+    @include tablet{
+        font-size: 46px;
+        right:3% ;
+    }
+}
+
+.search-box--two{
+    position: absolute;
+    right: 12%;
+    bottom:20%;
+
+    @include tablet{
+        right: 5% ;
+    }
+}
+
+.search--two {
+
+    @include tablet{
+        width: 60%;
+    }
+}

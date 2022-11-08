@@ -1,7 +1,30 @@
-@mixin margin-small{
+//Margins
+
+@mixin margin-small {
     margin-bottom: 20px;
 }
 
-@mixin margin-medium{
+@mixin margin-medium {
     margin-bottom: 30px;
+}
+
+
+@mixin hoverbuttons{
+    transform: translateY(-5px);
+    filter: drop-shadow(0 2px 1px $color-black);
+}
+
+
+
+@mixin tablet  { 
+    @media   (max-width:1199px){
+         @content;
+    }
+}
+
+@mixin mobile {
+     
+    @media (max-width:767px){
+        @content;
+    }
 }
