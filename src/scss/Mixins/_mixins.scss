@@ -6,6 +6,10 @@
 
 @mixin margin-medium {
     margin-bottom: 30px;
+
+    @include mobile{
+        margin-bottom: 20px;
+    }
 }
 
 

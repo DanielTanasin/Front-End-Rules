@@ -1,0 +1,27 @@
+.btn{
+    padding: 10px 16px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 5px;
+    border: none;
+    transition: all $trans-btns;
+    cursor: pointer;
+
+    &:hover {
+        @include hoverbuttons
+    }
+
+    @include mobile {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        padding: 11px 23px;
+    }
+}
+
+
+.btn--orange{
+    color:$color-white;
+    background-color: $color-orange;
+}

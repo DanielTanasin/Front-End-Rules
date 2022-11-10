@@ -1,0 +1,23 @@
+.section-heading{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: $color-green;
+    @include margin-medium;
+    
+    @include tablet {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        @include margin-small
+    }
+
+    @include mobile{
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom:10px ;
+    }
+}

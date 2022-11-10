@@ -1,0 +1,11 @@
+.section-slider{
+    width: 100%;
+    background-color: $light-grey;
+}
+
+.section-slider__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

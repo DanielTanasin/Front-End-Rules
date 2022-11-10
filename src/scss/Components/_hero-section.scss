@@ -1,0 +1,113 @@
+.hero-section {
+    width: 100%;
+    background: url(../../../assets/images/hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height:610px ;
+
+    @include tablet{
+        background:url(../../../assets/images/Rectangle4.png) ;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 500px;
+    }
+}
+
+
+.hero-section__img {
+    width: 100%;
+    position: absolute;
+    @include tablet {
+        display: none;
+    }
+}
+
+.hero-section__img--tablet {
+    display: none;
+
+    @include tablet {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+    }
+    @include mobile{
+        height: 500px;
+    }
+}
+
+.hero-section__wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    background-color: red;
+    position: relative;
+
+}
+
+.hero-section__content {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color:$color-transparent;
+    padding: 30px 20px;
+    margin-top: 600px;
+    max-width: 600px;
+
+    @include tablet {
+     margin-top: 500px;
+     
+    }
+    @include mobile {
+     align-self: center;
+     max-width: 100%;
+    }
+}
+
+.hero-section__heading {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 51px;
+    color: $color-white;
+    margin-bottom: 30px;
+
+    @include tablet {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 41px;
+    }
+    @include mobile {
+      margin-bottom: 10px;
+    }
+    
+}
+.aqua {
+    color: $color-blue;
+}
+
+.hero-section__p {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: $color-white;
+    
+
+    @include tablet{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 560px;
+        text-align: left;
+       }
+    @include mobile{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+       }
+}
