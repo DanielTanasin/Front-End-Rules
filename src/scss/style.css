@@ -252,6 +252,11 @@ table {
     transition: all 0.8s ease-out;
   }
 }
+@media (max-width: 767px) {
+  .header__nav {
+    top: 90px;
+  }
+}
 
 .header__nav--active {
   left: 0%;
@@ -886,6 +891,172 @@ table {
 .section-slider__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 70px 0;
+}
+@media (max-width: 1199px) {
+  .section-slider__wrapper {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  .section-heading--two {
+    margin-bottom: 30px;
+  }
+}
+
+.slides {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+@media (max-width: 1199px) {
+  .slides {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  max-width: 580px;
+}
+@media (max-width: 1199px) {
+  .slide {
+    max-width: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .slide {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .slide.slide--two {
+    margin-left: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .slide.slide--two {
+    display: none;
+  }
+}
+
+.slide__box {
+  max-width: 100%;
+  margin-bottom: 35px;
+}
+
+.slide__img {
+  width: 100%;
+}
+
+.slider__heading {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 3px;
+  color: #F05A28;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .slider__heading {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 15px;
+  }
+}
+
+.slider__p {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 34px;
+  color: #575756;
+  margin-bottom: 20px;
+}
+@media (max-width: 1199px) {
+  .slider__p {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .slider__p {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 15px;
+  }
+}
+
+.date-time {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #575756;
+}
+@media (max-width: 767px) {
+  .date-time {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.arrows-box {
+  display: flex;
+}
+
+.previous-box {
+  max-width: 100%;
+  margin-right: 10px;
+  transition: all 0.6s ease;
+}
+@media (max-width: 767px) {
+  .previous-box {
+    max-width: 18%;
+  }
+}
+
+.previous-box--active {
+  filter: drop-shadow(0 1px 5px #F05A28);
+  transform: translateX(-10px);
+}
+
+.previous {
+  width: 100%;
+}
+
+.next-box {
+  max-width: 100%;
+  transition: all 0.6s ease;
+}
+@media (max-width: 767px) {
+  .next-box {
+    max-width: 18%;
+  }
+}
+
+.next-box--active {
+  filter: drop-shadow(0 1px 5px #F05A28);
+  transform: translateX(-10px);
+}
+
+.next {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

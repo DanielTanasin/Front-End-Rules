@@ -1,6 +1,7 @@
 const searchBtn = document.querySelector('.search')
 const searchModal = document.querySelector('.search-modal')
 const closeBtn = document.querySelector('.close-search')
+console.log(closeBtn);
 
 
 const searchOpen = () =>{

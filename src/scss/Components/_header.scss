@@ -44,6 +44,10 @@
         overflow: hidden;
         transition: all $trans-animation-two;
     }
+
+    @include mobile {
+        top: 90px;
+    }
 }
 
 .header__nav--active {

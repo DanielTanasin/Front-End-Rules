@@ -1,11 +1,171 @@
-.section-slider{
+.section-slider {
     width: 100%;
     background-color: $light-grey;
 }
 
-.section-slider__wrapper{
+.section-slider__wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 70px 0;
+
+    @include tablet {
+        padding: 50px 0;
+    }
+}
+
+.section-heading--two {
+
+    @include tablet {
+        margin-bottom: 30px;
+    }
+}
+
+.slides {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @include tablet {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    max-width: 580px;
+
+    @include tablet {
+        max-width: 350px;
+    }
+    @include mobile {
+        max-width: 100%;
+    }
+}
+
+.slide.slide--two {
+    @include tablet {
+        margin-left: 28px;
+    }
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.slide__box {
+    max-width: 100%;
+   margin-bottom: 35px;  
+}
+
+.slide__img {
+    width: 100%;
+}
+
+.slider__heading {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 3px;
+    color: $color-orange;
+    @include margin-small;
+    text-transform: uppercase;  
+    
+    @include mobile {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 15px;
+    }
+}
+
+.slider__p {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    color: $dark-grey;
+    @include margin-small;
+
+    @include tablet {
+        font-family: 'Epilogue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    @include mobile {
+        font-family: 'Epilogue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+}
+
+.date-time {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: $dark-grey;
+
+    @include mobile {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+
+.arrows-box {
+    display: flex;
+  
+}
+
+.previous-box { 
+    max-width: 100%;
+    margin-right: 10px;
+    transition: all $trans-btns;
+
+    @include mobile { 
+        max-width: 18%;
+    }
+}
+
+.previous-box--active{
+    filter: drop-shadow( 0 1px 5px $color-orange);
+    transform: translateX(-10px);
+}
+
+.previous {
+    width: 100%;
+
+}
+
+.next-box {
+    max-width: 100%;
+    transition: all $trans-btns;
+
+    @include mobile { 
+        max-width: 18%;
+
+    }
+}
+
+.next-box--active{
+    filter: drop-shadow( 0 1px 5px $color-orange);
+    transform: translateX(-10px);
+}
+
+
+.next {
+    width: 100%;
+
 }
