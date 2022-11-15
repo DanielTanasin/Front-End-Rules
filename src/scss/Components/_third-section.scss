@@ -1,0 +1,194 @@
+.third-section {
+    width: 100%;
+}
+
+.third-section__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0;
+
+    @include tablet {
+        padding: 50px 0;
+    }
+}
+
+.third-section__years {
+    display: flex;
+    position: relative;
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.section-heading--three {
+    margin-bottom: 20px;
+}
+
+
+.year-box__drop {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color:$light-grey;
+    margin-top: 2px;
+    width: 100%;
+    padding: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all $trans-animation-one;
+    align-self: flex-start;
+   
+}
+
+.year-box__drop--one {
+    left: 0;
+}
+
+.year-box__drop--active {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.year-box__p {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $color-black;
+}
+
+.year-box__p:not(:last-child) {
+    @include margin-small;
+}
+
+
+.year-box:not(:last-child) {
+    margin-right: 2px;
+}
+
+.year {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 50px;
+    background-color: $light-grey;
+    color: $dark-grey;
+    border: none;
+    padding: 0 40px;
+    border-radius: 3px 3px 0px 0px;
+    transition: all $trans-btns;
+    cursor: pointer;
+
+    @include tablet {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 50px;
+    }
+}
+
+.year--active {
+    background-color: $color-blue;
+    color: $color-white;
+}
+
+.mobile-tab {
+    display: none;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+    }
+}
+
+.mobile-tab__menu{
+    display: flex;
+}
+
+.mobile-years {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    padding:10px 32px ;
+    border: none;
+    margin-right: 1px;
+    color: $color-white;
+    background-color: $color-blue;
+}
+
+.archive {
+    font-family: 'Epilogue';
+    padding: 10px 87px;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    
+}
+
+.buttons {
+    display:flex;
+    flex-direction: column;
+    margin-top: 1px;
+     border: none;
+     opacity: 0;
+     visibility: hidden;
+     transition: all $trans-animation-two;
+     overflow: hidden;
+     display: none;
+   
+}
+
+.buttons--active {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-tab__year {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    color: $dark-grey;
+    padding: 10px 0;
+    
+    &:hover{
+        background-color: $color-blue;
+        color: $color-white;
+    }
+}
+
+.hidden-div--one {
+    margin-top:1px  ;
+    padding: 20px;
+    background-color: $light-grey;
+    visibility:hidden ;
+    opacity: 0;
+}
+
+.hidden-div--one-active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.hidden-p {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $color-black;
+}
+
+.hidden-p:not(:last-child) {
+    margin-bottom: 20px;
+}

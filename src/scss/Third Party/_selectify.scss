@@ -1,0 +1,61 @@
+.selectify {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 200px;
+}
+
+.selectify-select {
+    padding: 7px 14px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    transition: ease-in-out 200ms background-color;
+    border: 1px solid #000;
+}
+
+.selectify-select:hover {
+    background-color: #f4f4f4;
+}
+
+.selectify-options {
+    position: absolute;
+    top: calc(100% - 1px);
+   width: calc(100vw - 40px);
+   display: flex;
+   text-align: center;
+    overflow: auto;
+    // max-width: 100px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.selectify-options::-webkit-scrollbar {
+    width: 4px;
+}
+
+.selectify-options::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+.selectify-options::-webkit-scrollbar-thumb {
+    background-color: #000;
+    cursor: pointer;
+}
+
+.selectify-option {
+    width: 100%;
+    border: none;
+    display: block;
+    padding: 7px 14px;
+    cursor: pointer;
+    text-align: left;
+    background-color: #fff;
+    transition: ease-in-out 200ms background-color;
+}
+
+.selectify-option:hover {
+    background-color: #f4f4f4;
+}

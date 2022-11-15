@@ -7,6 +7,8 @@
     display: flex;
     flex-direction: column;
     padding: 70px 0;
+    width: 100%;
+    overflow: hidden;
 
     @include tablet {
         padding: 50px 0;
@@ -20,14 +22,24 @@
     }
 }
 
+.slides-wrap {
+display: flex;
+transition: all $trans-animation-two;
+
+}
+
 .slides {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+    width: 100%;
+    margin-right: 10px;
+   
 
     @include tablet {
         width: 100%;
         justify-content: center;
+        margin-right: 0;
     }
 }
 
@@ -42,17 +54,16 @@
     @include mobile {
         max-width: 100%;
     }
-}
-
-.slide.slide--two {
-    @include tablet {
-        margin-left: 28px;
+    &.slide--two {
+        @include tablet {
+            margin-left: 28px;
+        }
+    
+        @include mobile {
+            display: none;
+        }
+     }
     }
-
-    @include mobile {
-        display: none;
-    }
-}
 
 .slide__box {
     max-width: 100%;
@@ -141,7 +152,7 @@
 
 .previous-box--active{
     filter: drop-shadow( 0 1px 5px $color-orange);
-    transform: translateX(-10px);
+    transform: translateY(-5px);
 }
 
 .previous {
@@ -161,7 +172,7 @@
 
 .next-box--active{
     filter: drop-shadow( 0 1px 5px $color-orange);
-    transform: translateX(-10px);
+    transform: translateY(-5px);
 }
 
 
