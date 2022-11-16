@@ -312,14 +312,14 @@
     right: 14%;
     bottom:20%;
 
-    @include tablet{
+    @include tablet {
         right: 5% ;
     }
 }
 
 .search--two {
 
-    @include tablet{
+    @include tablet {
         width: 60%;
     }
 }
@@ -350,11 +350,11 @@
 
 
 
-.drop-menu.drop-menu--two{
+.drop-menu.drop-menu--two {
 right: -30px;
 }
 
-.drop-menu--active{
+.drop-menu--active {
     visibility: visible;
     opacity: 1;
 }
@@ -422,7 +422,7 @@ right: -30px;
     font-family: 'Epilogue', sans-serif;
     transition: all $trans-links;
 
-    &:hover{
+    &:hover {
         color: $color-orange;
     }
 }

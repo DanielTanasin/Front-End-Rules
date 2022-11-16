@@ -4,8 +4,8 @@ const tabs = document.querySelectorAll('.year-box__drop');
 
 
 years.forEach((year) =>{
-    const btn = year.querySelector('.year')
-    const tab = year.querySelector('.year-box__drop')
+    const btn = year.querySelector('.year');
+    const tab = year.querySelector('.year-box__drop');
     
     year.addEventListener('click', () =>{
         btns.forEach((btn)=>{
@@ -13,11 +13,11 @@ years.forEach((year) =>{
         })
     
         tabs.forEach((tab)=>{
-            tab.classList.remove('year-box__drop--active')
+            tab.classList.remove('year-box__drop--active');
         })
     
         btn.classList.add('year--active');
-        tab.classList.add('year-box__drop--active')
+        tab.classList.add('year-box__drop--active');
     });
    
 })

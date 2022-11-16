@@ -1,9 +1,9 @@
-.section-slider {
+.section-slider-two {
     width: 100%;
     background-color: $light-grey;
 }
 
-.section-slider__wrapper {
+.section-slider__wrapper-two {
     display: flex;
     flex-direction: column;
     padding: 70px 0;
@@ -22,14 +22,14 @@
     }
 }
 
-.slides-wrap {
+.slides-wrap-two {
 display: flex;
 width: 300%;
 transition: all $trans-animation-two;
 
 }
 
-.slides {
+.slides-two {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
@@ -136,12 +136,12 @@ transition: all $trans-animation-two;
     }
 }
 
-.arrows-box {
+.arrows-box-two {
     display: flex;
   
 }
 
-.previous-box { 
+.previous-box-two { 
     max-width: 100%;
     margin-right: 10px;
     transition: all $trans-btns;
@@ -151,17 +151,17 @@ transition: all $trans-animation-two;
     }
 }
 
-.previous-box--active{
+.previous-box-two--active{
     filter: drop-shadow( 0 1px 5px $color-orange);
     transform: translateY(-5px);
 }
 
-.previous {
+.previous-two {
     width: 100%;
 
 }
 
-.next-box {
+.next-box-two {
     max-width: 100%;
     transition: all $trans-btns;
 
@@ -171,13 +171,13 @@ transition: all $trans-animation-two;
     }
 }
 
-.next-box--active{
+.next-box-two--active{
     filter: drop-shadow( 0 1px 5px $color-orange);
     transform: translateY(-5px);
 }
 
 
-.next {
+.next-two {
     width: 100%;
 
 }

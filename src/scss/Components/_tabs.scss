@@ -1,21 +1,22 @@
-.third-section {
+.tabs {
     width: 100%;
 }
 
-.third-section__wrapper {
+.tabs__wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 70px 0;
+    position: relative;
 
     @include tablet {
         padding: 50px 0;
     }
 }
 
-.third-section__years {
+.tabs__years {
     display: flex;
-    position: relative;
+    
 
     @include mobile {
         display: none;
@@ -23,8 +24,9 @@
 }
 
 .section-heading--three {
-    margin-bottom: 20px;
+    @include margin-small;
 }
+
 
 
 .year-box__drop {
@@ -167,17 +169,47 @@
     }
 }
 
+
 .hidden-div--one {
     margin-top:1px  ;
     padding: 20px;
     background-color: $light-grey;
     visibility:hidden ;
     opacity: 0;
+    display: none;
 }
 
-.hidden-div--one-active{
+.hidden-div--two {
+    margin-top:1px  ;
+    padding: 20px;
+    background-color: $light-grey;
+    visibility:hidden ;
+    opacity: 0;
+display: none;
+}
+
+.hidden-div--three {
+    margin-top:1px  ;
+    padding: 20px;
+    background-color: $light-grey;
+    visibility:hidden ;
+    opacity: 0;
+display: none;
+}
+
+.hidden-div--four {
+    margin-top:1px  ;
+    padding: 20px;
+    background-color: $light-grey;
+    visibility:hidden ;
+    opacity: 0;
+display: none;
+}
+
+.hidden-div--active {
     opacity: 1;
     visibility: visible;
+    display: block;
 }
 
 .hidden-p {
@@ -190,5 +222,5 @@
 }
 
 .hidden-p:not(:last-child) {
-    margin-bottom: 20px;
+   @include margin-small
 }

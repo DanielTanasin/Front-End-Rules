@@ -32,7 +32,7 @@
         width: 100%;
         object-fit: cover;
     }
-    @include mobile{
+    @include mobile {
         height: 500px;
     }
 }
@@ -98,14 +98,14 @@
     color: $color-white;
     
 
-    @include tablet{
+    @include tablet {
         font-weight: 400;
         font-size: 20px;
         line-height: 30px;
         max-width: 560px;
         text-align: left;
        }
-    @include mobile{
+    @include mobile {
         font-weight: 400;
         font-size: 20px;
         line-height: 30px;

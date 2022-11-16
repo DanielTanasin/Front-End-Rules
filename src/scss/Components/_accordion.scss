@@ -1,0 +1,95 @@
+.accordion {
+    width: 100%;
+}
+
+.accordion__wrapper {
+    width: 100%;
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        padding: 50px 0;
+    }
+}
+
+.accordion__acc {
+    width: 100%;
+    border-top: 2px solid $light-grey;
+   
+}
+
+.accordion__box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid $light-grey;
+}
+
+.question {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+    color: $dark-grey;
+    background-color: $color-white;
+    border: none;
+    padding-top:30.5px ;
+    padding-bottom:35.5px ;
+
+    @include tablet {
+    max-width: 100%;
+    padding-bottom: 48px;
+    }
+}
+
+.question--active{
+    background-color: $color-white;
+}
+
+.question::after {
+    display: block;
+    content: "+";
+    position: absolute;
+    right: 2%;
+    color: $color-orange;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 130%;
+    transition: all $trans-animation-two;
+
+    @include tablet {
+     top: 17%;
+     right: 3%;
+        }
+}
+
+.question--active.question--active::after{
+    content: "-";
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height $trans-animation-two;
+}
+
+
+.answer-p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $dark-grey;
+
+    @include margin-medium;
+
+}
+
+
+.underline {
+color: $color-orange;
+font-weight: 800;
+}

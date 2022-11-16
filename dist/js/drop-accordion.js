@@ -1,10 +1,10 @@
-const links = document.querySelectorAll('.nav-item')
-const searchBtn = document.querySelector('.search')
+const links = document.querySelectorAll('.nav-item');
+const searchBtn = document.querySelector('.search');
 
 
 links.forEach((link) =>{
-    const panel = link.querySelector('.drop-accordion')
-    const arrow = link.querySelector('.nav-expand')
+    const panel = link.querySelector('.drop-accordion');
+    const arrow = link.querySelector('.nav-expand');
 
     link.addEventListener('click', () =>{
 

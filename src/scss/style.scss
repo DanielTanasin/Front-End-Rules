@@ -1,12 +1,14 @@
+@import "Variables/variables";
 @import "reset";
 @import "Base/base";
-@import "Variables/variables";
 @import "Mixins/mixins";
 @import "Typography/button";
 @import "Typography/headings";
 @import "Components/header";
 @import "Components/hero-section";
-@import "Components/second-section";
+@import "Components/filler";
 @import "Components/section-slider";
-@import "Components/third-section";
-@import "Third Party/selectify";
+@import "Components/tabs";
+@import "Components/section-slider-two";
+@import "Components/accordion";
+
