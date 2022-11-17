@@ -24,6 +24,10 @@
     display: flex;
     flex-direction: column;
     border-bottom: 2px solid $light-grey;
+
+    &--first{
+        padding-bottom: 30px;
+    }
 }
 
 .question {
@@ -36,13 +40,46 @@
     line-height: 130%;
     color: $dark-grey;
     background-color: $color-white;
+    cursor: pointer;
     border: none;
     padding-top:30.5px ;
     padding-bottom:35.5px ;
 
     @include tablet {
     max-width: 100%;
-    padding-bottom: 48px;
+    display: flex;
+    text-align: left;
+    padding: 30px 0;
+    }
+
+    @include mobile {
+        padding-top: 21px;
+        padding-bottom: 24px;
+    padding-right: 60px;
+
+    }
+
+    &--one {
+        @include tablet {
+            padding-bottom: 48px;
+        }
+
+        @include mobile { 
+            padding-bottom: 38px;
+        }
+       
+    }
+
+    &--second {
+        @include tablet {
+            padding-right: 40px;
+        }
+    }
+
+    @include mobile {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
     }
 }
 
@@ -67,7 +104,7 @@
         }
 }
 
-.question--active.question--active::after{
+.question--active::after {
     content: "-";
 }
 
@@ -78,6 +115,10 @@
 }
 
 
+.answer--active{
+    max-height: 500px;
+}
+
 .answer-p {
     font-weight: 400;
     font-size: 16px;
@@ -85,6 +126,12 @@
     color: $dark-grey;
 
     @include margin-medium;
+
+    @include mobile {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+    }
 
 }
 

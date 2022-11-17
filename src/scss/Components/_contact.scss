@@ -1,0 +1,275 @@
+.contact {
+    width: 100%;
+    background-color: $color-green;
+}
+
+.contact__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
+
+    @include tablet {
+        padding: 50px 0;
+    }
+}
+
+
+.form {
+    width: 100%;
+}
+.form__box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    @include margin-small;
+
+    @include mobile {
+        flex-direction: column;
+
+    }
+}
+
+.form__input-box {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+
+    @include mobile {
+        width: 100%;
+
+        &--one {
+            @include margin-small;
+        }
+    }
+    
+}
+
+
+
+.textarea-box {
+    width: 100%;
+    display: flex;
+    @include margin-small;
+
+    @include mobile {
+        margin-bottom:3px;
+    }
+}
+
+.area__input-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include mobile {
+        @include margin-small;
+    }
+}
+
+.textarea {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid $light-grey;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+    min-height: 180px;
+
+    @include mobile {
+        min-height: 160px;
+    }
+}
+
+.textarea::placeholder {
+   color: $color-white;
+   padding-top: 16px;
+   padding-left:20px ;
+
+   @include tablet {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    padding-left:12px ;
+}
+   @include mobile {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+}
+
+.text__label {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 23px;
+    color: $color-white;
+    margin-bottom: 10px;
+    
+    @include tablet {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px
+    }
+    @include tablet {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+    }
+}
+
+.form__label {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 23px;
+    color: $color-white;
+    margin-bottom: 10px;
+
+    @include tablet {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px
+    }
+
+    @include mobile {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px
+    }
+}
+
+.form__input { 
+    background-color: transparent;
+    border: 1px solid $light-grey ;
+    min-height: 60px;
+    
+    @include mobile {
+    
+        min-height: 50px;
+    }
+}
+
+.form__input::placeholder {
+    color: $color-white;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+    padding-left:22px ;
+
+    @include tablet {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        padding-left:12px ;
+    }
+    @include mobile {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+
+.form__radio-box {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-bottom: 10px;
+    
+}
+
+.radio-box {
+    display: flex;
+    align-items: center;
+}
+
+.radio-box:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+
+
+.radio-label {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 23px;
+    color: $color-white;
+
+    @include tablet {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    @include mobile {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+    }
+}
+
+.radio {
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+
+input[type='radio']:after {
+    width: 26px;
+    height: 26px;
+    border-radius: 15px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 5px solid $color-white;
+}
+
+input[type='radio']:checked:after {
+    width: 26px;
+    height: 26px;
+    border-radius: 15px;
+    position: relative;
+    background-color:$color-blue;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 5px solid $color-white;
+}
+
+.required {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: $color-white;
+    
+    
+}
+
+.submit{
+    display: flex;
+    margin: auto;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    padding: 10px 16px;
+    color: $color-white;
+    background-color: transparent;
+    border: 1px solid $light-grey;
+    border-radius: 5px;
+    transition: all $trans-btns;
+    margin-top: 20px;
+
+    &:hover {
+       @include hoverbuttons
+    }
+
+    @include mobile {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        padding: 10px 19.5px;
+    }
+}

@@ -10,29 +10,32 @@
     justify-content: space-between;
     align-items: center;
 
-    &--two {
-        flex-direction: row-reverse;
-        padding-top: 286px;
-
-    }
+   &--two {
+    flex-direction: row-reverse;
+    padding-top: 286px;
+   }
 
     @include tablet{
         padding: 50px 0;
         justify-content: space-between;
-
-        &--two{
-            padding-top:347px ;
+        
+        &--two{ 
+            padding-top:350px ;
         }
+     
     }
 
     @include mobile {
         flex-direction: column-reverse;
         
-        &--two{
-            padding-top:0;
+        &--two{ 
+            padding-top:0 ;
+            padding: 50px 0;
         }
     }
 }
+
+
 
 .filler__content {
     max-width: 530px;
