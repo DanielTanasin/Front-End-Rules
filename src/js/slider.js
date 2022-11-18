@@ -55,9 +55,9 @@ slideWrapTwo.style.width = slidesTwo.length * 100 + "%"
 
 nextTwo.addEventListener('click', () =>{
     if(!nextTwo.classList.contains("next-box--active") ||
-       previousTwo.classList.contains("previous-box--active")){
-        nextTwo.classList.add("next-box--active");
-        previousTwo.classList.remove("previous-box--active");
+       previousTwo?.classList.contains("previous-box--active")){
+        nextTwo?.classList.add("next-box--active");
+        previousTwo?.classList.remove("previous-box--active");
     }
 
     if(counter < slidesTwo.length - 1  ){
@@ -70,9 +70,9 @@ nextTwo.addEventListener('click', () =>{
 
 previousTwo.addEventListener("click", () =>{
     if(!previousTwo.classList.contains("previous-box--active") ||
-       nextTwo.classList.contains("next-box--active")){
-        previousTwo.classList.add("previous-box--active");
-        nextTwo.classList.remove("next-box--active");
+       nextTwo?.classList.contains("next-box--active")){
+        previousTwo?.classList.add("previous-box--active");
+        nextTwo?.classList.remove("next-box--active");
     }
 
     if(counter >= 1  ){

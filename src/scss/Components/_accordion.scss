@@ -72,7 +72,13 @@
 
     &--second {
         @include tablet {
-            padding-right: 40px;
+            padding-right:70px;
+        }
+    }
+
+    &--three {
+        @include tablet {
+            padding-right: 70px;
         }
     }
 

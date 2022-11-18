@@ -12,16 +12,14 @@
 
    &--two {
     flex-direction: row-reverse;
-    padding-top: 286px;
+    padding: 63px 0;
    }
 
     @include tablet{
         padding: 50px 0;
         justify-content: space-between;
         
-        &--two{ 
-            padding-top:350px ;
-        }
+       
      
     }
 
@@ -29,8 +27,7 @@
         flex-direction: column-reverse;
         
         &--two{ 
-            padding-top:0 ;
-            padding: 50px 0;
+            padding: 45px 0;
         }
     }
 }
